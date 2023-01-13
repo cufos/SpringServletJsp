@@ -23,6 +23,6 @@ public class WebSiteInfoController {
 
   @GetMapping(path = {"detail"})
   public ModelAndView detailPage(){
-    return new ModelAndView("/jsp/dettagli.jsp","detail",'A');
+    return new ModelAndView("/jsp/dettagli.jsp");
   }
 }
