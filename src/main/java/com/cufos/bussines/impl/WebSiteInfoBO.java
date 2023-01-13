@@ -27,5 +27,10 @@ public class WebSiteInfoBO implements com.cufos.bussines.interfaces.WebSiteInfoB
     webSiteInfoRepository.save(webSiteInfo);
   }
 
+  @Override
+  public void deleteWebSiteInfo(Long infoId) throws DataAccessException{
+    webSiteInfoRepository.deleteById(infoId);
+  }
+
 
 }

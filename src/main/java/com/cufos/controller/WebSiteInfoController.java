@@ -32,7 +32,7 @@ public class WebSiteInfoController {
   }
 
   @GetMapping("insertInfo")
-  public ModelAndView createInfo(){
+  public ModelAndView insertInfo(){
     return new ModelAndView("/jsp/insertInfo.jsp");
   }
 
@@ -45,6 +45,20 @@ public class WebSiteInfoController {
     webSiteInfo.setDescription(description);
     webSiteInfoBO.insertWebSiteInfo(webSiteInfo);
     return new ModelAndView("/jsp/insertInfo.jsp","operation",true);
+  }
+
+  @GetMapping("deleteViewInfo")
+  public ModelAndView deleteInfo(){
+    return new ModelAndView("/jsp/deleteInfo.jsp");
+  }
+
+  @GetMapping("deleteInfo")
+  public ModelAndView deleteInfo(@RequestParam String id){
+    if(!id.isEmpty()) {
+      webSiteInfoBO.deleteWebSiteInfo(Long.parseLong(id));
+      return new ModelAndView("/jsp/deleteInfo.jsp","operation",true);
+    }
+    return new ModelAndView("/jsp/deleteInfo.jsp","id_not_found",true);
   }
 
 

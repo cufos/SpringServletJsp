@@ -10,4 +10,6 @@ public interface WebSiteInfoBO {
    List<WebSiteInfo> getAllWebSiteInfo();
 
    void insertWebSiteInfo(WebSiteInfo webSiteInfo);
+
+   void deleteWebSiteInfo(Long infoId);
 }
