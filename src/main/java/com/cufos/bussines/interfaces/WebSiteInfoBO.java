@@ -8,4 +8,6 @@ public interface WebSiteInfoBO {
    WebSiteInfo getWebSiteInfo();
 
    List<WebSiteInfo> getAllWebSiteInfo();
+
+   void insertWebSiteInfo(WebSiteInfo webSiteInfo);
 }

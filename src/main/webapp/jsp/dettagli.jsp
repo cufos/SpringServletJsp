@@ -9,8 +9,8 @@
 <div class="container w-50 m-auto">
 
     <table class="table table-bordered border-primary">
-        <thead>
-            <tr>
+        <thead class="table-info border-primary">
+            <tr class="text-primary">
                 <th scope="col">Name</th>
                 <th scope="col">Description</th>
             </tr>

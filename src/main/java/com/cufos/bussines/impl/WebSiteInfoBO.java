@@ -22,5 +22,10 @@ public class WebSiteInfoBO implements com.cufos.bussines.interfaces.WebSiteInfoB
     return webSiteInfoRepository.findAll();
   }
 
+  @Override
+  public void insertWebSiteInfo(WebSiteInfo webSiteInfo) throws DataAccessException{
+    webSiteInfoRepository.save(webSiteInfo);
+  }
+
 
 }

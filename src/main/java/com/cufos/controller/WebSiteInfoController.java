@@ -5,6 +5,8 @@ import com.cufos.model.WebSiteInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -28,4 +30,22 @@ public class WebSiteInfoController {
     List<WebSiteInfo> allSiteInfo = webSiteInfoBO.getAllWebSiteInfo();
     return new ModelAndView("/jsp/dettagli.jsp","detail",allSiteInfo);
   }
+
+  @GetMapping("insertInfo")
+  public ModelAndView createInfo(){
+    return new ModelAndView("/jsp/insertInfo.jsp");
+  }
+
+  @PostMapping ("insertInfo")
+  public ModelAndView insertInfo(
+    @RequestParam String name, @RequestParam String description
+  ){
+    WebSiteInfo webSiteInfo = new WebSiteInfo();
+    webSiteInfo.setName(name);
+    webSiteInfo.setDescription(description);
+    webSiteInfoBO.insertWebSiteInfo(webSiteInfo);
+    return new ModelAndView("/jsp/insertInfo.jsp","operation",true);
+  }
+
+
 }

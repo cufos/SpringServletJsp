@@ -12,6 +12,9 @@
                 <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/detail">Detail</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/insertInfo">Insert Info</a>
+                </li>
             </ul>
         </div>
     </div>
