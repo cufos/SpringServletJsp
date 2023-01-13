@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
+
 @Controller
 public class WebSiteInfoController {
   @Autowired
@@ -21,8 +23,9 @@ public class WebSiteInfoController {
     return new ModelAndView("/jsp/index.jsp","info",webSiteInfo);
   }
 
-  @GetMapping(path = {"detail"})
+  @GetMapping(path ="detail")
   public ModelAndView detailPage(){
-    return new ModelAndView("/jsp/dettagli.jsp");
+    List<WebSiteInfo> allSiteInfo = webSiteInfoBO.getAllWebSiteInfo();
+    return new ModelAndView("/jsp/dettagli.jsp","detail",allSiteInfo);
   }
 }
