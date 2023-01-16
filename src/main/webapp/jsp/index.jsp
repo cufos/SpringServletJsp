@@ -2,13 +2,17 @@
 <html lang="en">
 <jsp:include page="head.jsp"></jsp:include>
 <body>
+<%--the navbar--%>
 <jsp:include page="navbar.jsp"></jsp:include>
-<div class="card w-25 m-auto mt-4 border-primary">
-    <div class="card-body">
-        <p> <span class="text-primary">Name: </span>${info.getName()}</p>
-        <p><span class="text-primary">Description: </span> ${info.getDescription()}</p>
-    </div>
-</div>
+<%--the hero banner--%>
+<jsp:include page="hero.jsp"></jsp:include>
+<%--skills--%>
+<jsp:include page="skills.jsp"></jsp:include>
+<%--projects--%>
+<jsp:include page="projects.jsp"></jsp:include>
+<%--personal skills--%>
+<jsp:include page="personalSkills.jsp"></jsp:include>
+<%--Scripts for bootstrap--%>
 <jsp:include page="scripts.jsp"></jsp:include>
 </body>
 </html>
