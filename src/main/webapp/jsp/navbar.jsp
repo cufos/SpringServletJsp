@@ -18,9 +18,6 @@
                 <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/deleteInfo">Delete Info</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/updateInfo">Update Info</a>
-                </li>
             </ul>
         </div>
     </div>
