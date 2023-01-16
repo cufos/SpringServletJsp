@@ -63,23 +63,15 @@ public class WebSiteInfoController {
 
   @GetMapping(path = {"/updateInfo"})
   public ModelAndView searchInfo(@RequestParam String id) {
-
-    if (!id.isEmpty()){
       WebSiteInfo info = webSiteInfoBO.findOneSiteInfo(Long.parseLong(id));
       return new ModelAndView("/jsp/updateInfo.jsp","info",info);
-    }
-    return new ModelAndView("/jsp/dettagli.jsp");
+
   }
 
   @PostMapping(path = {"/updateInfo"})
   public ModelAndView updateInfo(@RequestParam String id, String name, String description) {
-
-    if (!id.isEmpty()){
-      webSiteInfoBO.updateWebSiteInfo(Long.parseLong(id),name,description);
-    }
+    webSiteInfoBO.updateWebSiteInfo(Long.parseLong(id), name, description);
     return new ModelAndView("/jsp/dettagli.jsp");
-
   }
-
 
 }
