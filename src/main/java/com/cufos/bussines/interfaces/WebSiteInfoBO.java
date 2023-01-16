@@ -12,4 +12,8 @@ public interface WebSiteInfoBO {
    void insertWebSiteInfo(WebSiteInfo webSiteInfo);
 
    void deleteWebSiteInfo(Long infoId);
+
+   void updateWebSiteInfo(Long infoId, String name, String description);
+
+   WebSiteInfo findOneSiteInfo(Long id);
 }

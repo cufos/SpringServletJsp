@@ -14,6 +14,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Description</th>
                 <th scope="col">Delete</th>
+                <th scope="col">Update</th>
             </tr>
         </thead>
 
@@ -30,6 +31,13 @@
                     <button type="button" class="btn btn-danger m-auto">
                         <a class="text-light" href="${pageContext.request.contextPath}/deleteInfo?id=<c:out value="${detail.getId()}" />">
                             Delete
+                        </a>
+                    </button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-success m-auto">
+                        <a class="text-light" href="${pageContext.request.contextPath}/updateInfo?id=<c:out value="${detail.getId()}" />">
+                            Update
                         </a>
                     </button>
                 </td>
