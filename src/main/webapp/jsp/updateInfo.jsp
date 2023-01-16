@@ -5,7 +5,11 @@
 <jsp:include page="head.jsp"></jsp:include>
 <body>
 <jsp:include page="navbar.jsp"></jsp:include>
-
+<c:if test="${site == true}">
+    <div class="alert alert-success" role="alert">
+        Info updated correctly
+    </div>
+</c:if>
 <div class="container w-50 m-auto mt-4">
     <form action="${pageContext.request.contextPath}/updateInfo" method="post">
         <div class="mb-3">
@@ -25,5 +29,6 @@
     </form>
 </div>
 </form>
+<jsp:include page="scripts.jsp"></jsp:include>
 </body>
 </html>

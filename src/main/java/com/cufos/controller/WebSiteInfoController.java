@@ -61,17 +61,17 @@ public class WebSiteInfoController {
     return new ModelAndView("/jsp/deleteInfo.jsp","id_not_found",true);
   }
 
-  @GetMapping(path = {"/updateInfo"})
+  @GetMapping(path = "updateInfo")
   public ModelAndView searchInfo(@RequestParam String id) {
       WebSiteInfo info = webSiteInfoBO.findOneSiteInfo(Long.parseLong(id));
       return new ModelAndView("/jsp/updateInfo.jsp","info",info);
 
   }
 
-  @PostMapping(path = {"/updateInfo"})
+  @PostMapping(path = "updateInfo")
   public ModelAndView updateInfo(@RequestParam String id, String name, String description) {
     webSiteInfoBO.updateWebSiteInfo(Long.parseLong(id), name, description);
-    return new ModelAndView("/jsp/dettagli.jsp");
+    return new ModelAndView("/jsp/updateInfo.jsp","site",true);
   }
 
 }

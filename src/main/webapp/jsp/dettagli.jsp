@@ -46,6 +46,6 @@
         </tbody>
     </table>
 </div>
-
+<jsp:include page="scripts.jsp"></jsp:include>
 </body>
 </html>

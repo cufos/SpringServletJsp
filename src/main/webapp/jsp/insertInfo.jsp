@@ -24,5 +24,6 @@
     </form>
 </div>
 </form>
+<jsp:include page="scripts.jsp"></jsp:include>
 </body>
 </html>
