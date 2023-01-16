@@ -12,6 +12,8 @@
 <jsp:include page="projects.jsp"></jsp:include>
 <%--personal skills--%>
 <jsp:include page="personalSkills.jsp"></jsp:include>
+<%--footer--%>
+<jsp:include page="footer.jsp"></jsp:include>
 <%--Scripts for bootstrap--%>
 <jsp:include page="scripts.jsp"></jsp:include>
 </body>
