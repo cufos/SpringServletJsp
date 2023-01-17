@@ -9,7 +9,7 @@
 <%--skills--%>
 <jsp:include page="skills.jsp"></jsp:include>
 <%--projects--%>
-<jsp:include page="projects.jsp"></jsp:include>
+<%--<jsp:include page="projects.jsp"></jsp:include>--%>
 <%--personal skills--%>
 <jsp:include page="personalSkills.jsp"></jsp:include>
 <%--footer--%>

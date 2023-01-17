@@ -4,9 +4,11 @@ import com.cufos.bussiness.interfaces.ProjectsBO;
 import com.cufos.model.ProjectsModel;
 import com.cufos.repository.ProjectsRepository;
 import org.springframework.dao.DataAccessException;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ProjectsBOImpl implements ProjectsBO {
   private final ProjectsRepository projectsRepository;
 
