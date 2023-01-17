@@ -1,9 +1,9 @@
-<div class="container" id="skills">
-    <h3 class="text-center mt-4 mb-4 text-uppercase fw-bold">Skills</h3>
-    <p class="text-center mb-4">Custom Software Development Services From Dedicated Developers With Vast Industry-Specific Experience</p>
-    <div class="d-flex flex-row align-items-start">
-        <section style="width: 30vw">
-            <img class="w-50 h-50" src="../static/graphics.png">
+<div class="max-w-5xl m-auto" id="skills">
+    <h3 class="text-center mt-4 mb-4 text-2xl uppercase border-b-4 border-indigo-500 w-max m-auto">Skills</h3>
+    <p class="text-xl text-center mb-4">Custom Software Development Services From Dedicated Developers With Vast Industry-Specific Experience</p>
+    <div class="">
+        <section class="mx-4">
+            <img class="" src="../static/graphics.png">
         </section>
 
         <section class="flex-fill">
