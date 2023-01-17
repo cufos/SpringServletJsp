@@ -12,15 +12,17 @@
                 <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/">Home</a>
                 </li>
+                <sec:authorize access="isAuthenticated()">
                 <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/detail">Detail</a>
                 </li>
-                <sec:authorize access="isAuthenticated()">
+                </sec:authorize>
+                <sec:authorize access="hasRole('ADMIN')">
                 <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/admin/insertInfo">Insert Info</a>
                 </li>
                 </sec:authorize>
-                <sec:authorize access="isAuthenticated()">
+                <sec:authorize access="hasRole('ADMIN')">
                 <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/admin/deleteInfo">Delete Info</a>
                 </li>

@@ -22,7 +22,12 @@ class SecurityConfig {
       .roles("USER")
       .build();
 
-    return new InMemoryUserDetailsManager(user);
+    UserDetails user_1 = User.withUsername("admin")
+      .password(passwordEncoder.encode("admin"))
+      .roles("ADMIN")
+      .build();
+
+    return new InMemoryUserDetailsManager(user,user_1);
   }
 
   @Bean
@@ -45,7 +50,7 @@ class SecurityConfig {
       .csrf().disable()
       .authorizeRequests()
       .requestMatchers("/admin/**")
-      .authenticated()
+      .hasRole("ADMIN")
       .requestMatchers("/")
       .permitAll()
       .and()
