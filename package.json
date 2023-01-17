@@ -1,0 +1,24 @@
+{
+  "name": "springJspServlet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i styles/input.css -o ./src/main/webapp/static/css/main.css",
+    "dev":"npx tailwindcss -i styles/input.css -o ./src/main/webapp/static/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cufos/SpringServletJsp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cufos/SpringServletJsp/issues"
+  },
+  "homepage": "https://github.com/cufos/SpringServletJsp#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
