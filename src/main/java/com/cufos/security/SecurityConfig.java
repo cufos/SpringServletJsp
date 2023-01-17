@@ -42,6 +42,7 @@ class SecurityConfig {
       .deleteCookies()
       .invalidateHttpSession(true)
       .and()
+      .csrf().disable()
       .authorizeRequests()
       .requestMatchers("/admin/**")
       .authenticated()

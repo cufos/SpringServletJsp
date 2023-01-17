@@ -19,6 +19,7 @@ public class WebSiteInfoController {
   @GetMapping(path = {"/","/index"})
   public ModelAndView home(){
     WebSiteInfo webSiteInfo = webSiteInfoBO.getWebSiteInfo();
+    System.out.println(webSiteInfo);
 
 //      throw new IllegalArgumentException("E");
 
