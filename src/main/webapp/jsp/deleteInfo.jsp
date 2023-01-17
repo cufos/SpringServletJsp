@@ -17,7 +17,7 @@
 </c:if>
 
 <div class="container w-50 m-auto mt-4">
-    <form action="${pageContext.request.contextPath}/deleteInfo" method="post">
+    <form action="${pageContext.request.contextPath}/admin/deleteInfo" method="post">
         <div class="mb-3">
             <label for="id" class="form-label text-primary fw-bold">Id</label>
             <input type="number" name="id" class="form-control border-primary" id="id" placeholder="The id of the site">

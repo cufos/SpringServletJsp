@@ -31,12 +31,12 @@ public class WebSiteInfoController {
     return new ModelAndView("/jsp/dettagli.jsp","detail",allSiteInfo);
   }
 
-  @GetMapping("insertInfo")
+  @GetMapping("/admin/insertInfo")
   public ModelAndView insertInfo(){
     return new ModelAndView("/jsp/insertInfo.jsp");
   }
 
-  @PostMapping ("insertInfo")
+  @PostMapping ("/admin/insertInfo")
   public ModelAndView insertInfo(
     @RequestParam String name, @RequestParam String description
   ){
@@ -47,12 +47,12 @@ public class WebSiteInfoController {
     return new ModelAndView("/jsp/insertInfo.jsp","operation",true);
   }
 
-  @GetMapping("deleteViewInfo")
+  @GetMapping("/admin/deleteViewInfo")
   public ModelAndView deleteInfo(){
     return new ModelAndView("/jsp/deleteInfo.jsp");
   }
 
-  @GetMapping("deleteInfo")
+  @GetMapping("/admin/deleteInfo")
   public ModelAndView deleteInfo(@RequestParam String id){
     if(!id.isEmpty()) {
       webSiteInfoBO.deleteWebSiteInfo(Long.parseLong(id));
@@ -61,14 +61,14 @@ public class WebSiteInfoController {
     return new ModelAndView("/jsp/deleteInfo.jsp","id_not_found",true);
   }
 
-  @GetMapping(path = "updateInfo")
+  @GetMapping(path = "/admin/updateInfo")
   public ModelAndView searchInfo(@RequestParam String id) {
       WebSiteInfo info = webSiteInfoBO.findOneSiteInfo(Long.parseLong(id));
       return new ModelAndView("/jsp/updateInfo.jsp","info",info);
 
   }
 
-  @PostMapping(path = "updateInfo")
+  @PostMapping(path = "/admin/updateInfo")
   public ModelAndView updateInfo(@RequestParam String id, String name, String description) {
     webSiteInfoBO.updateWebSiteInfo(Long.parseLong(id), name, description);
     return new ModelAndView("/jsp/updateInfo.jsp","site",true);

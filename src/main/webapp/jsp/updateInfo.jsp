@@ -11,7 +11,7 @@
     </div>
 </c:if>
 <div class="container w-50 m-auto mt-4">
-    <form action="${pageContext.request.contextPath}/updateInfo" method="post">
+    <form action="${pageContext.request.contextPath}/admin/updateInfo" method="post">
         <div class="mb-3">
             <label  class="form-label">Site Info Id</label>
             <input type="number" class="form-control" name="id_2" disabled value="${info.getId()}">

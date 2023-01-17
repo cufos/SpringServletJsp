@@ -29,14 +29,14 @@
                 </td>
                 <td>
                     <button type="button" class="btn btn-danger m-auto">
-                        <a class="text-light" href="${pageContext.request.contextPath}/deleteInfo?id=<c:out value="${detail.getId()}" />">
+                        <a class="text-light" href="${pageContext.request.contextPath}/admin/deleteInfo?id=<c:out value="${detail.getId()}" />">
                             Delete
                         </a>
                     </button>
                 </td>
                 <td>
                     <button type="button" class="btn btn-success m-auto">
-                        <a class="text-light" href="${pageContext.request.contextPath}/updateInfo?id=<c:out value="${detail.getId()}" />">
+                        <a class="text-light" href="${pageContext.request.contextPath}/admin/updateInfo?id=<c:out value="${detail.getId()}" />">
                             Update
                         </a>
                     </button>

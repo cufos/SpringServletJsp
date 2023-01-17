@@ -1,3 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <nav class="navbar navbar-expand-lg bg-primary">
     <div class="container-fluid">
         <a class="navbar-brand text-light" href="#">Navbar</a>
@@ -12,12 +15,26 @@
                 <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/detail">Detail</a>
                 </li>
+                <sec:authorize access="isAuthenticated()">
                 <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/insertInfo">Insert Info</a>
+                    <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/admin/insertInfo">Insert Info</a>
                 </li>
+                </sec:authorize>
+                <sec:authorize access="isAuthenticated()">
                 <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/deleteInfo">Delete Info</a>
+                    <a class="nav-link active text-light" aria-current="page" href="${pageContext.request.contextPath}/admin/deleteInfo">Delete Info</a>
                 </li>
+                </sec:authorize>
+                <sec:authorize access="isAuthenticated()">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/logout">Logout</a>
+                    </li>
+                </sec:authorize>
+                <sec:authorize access="!isAuthenticated()">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/login">Login</a>
+                    </li>
+                </sec:authorize>
             </ul>
         </div>
     </div>

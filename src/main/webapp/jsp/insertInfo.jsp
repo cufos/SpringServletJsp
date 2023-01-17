@@ -11,7 +11,7 @@
     </div>
 </c:if>
 <div class="container w-50 m-auto mt-4">
-    <form action="${pageContext.request.contextPath}/insertInfo" method="post">
+    <form action="${pageContext.request.contextPath}/admin/insertInfo" method="post">
         <div class="mb-3">
             <label for="name" class="form-label text-primary fw-bold">Name</label>
             <input type="text" name="name" class="form-control border-primary" id="name" placeholder="Name of the site">
