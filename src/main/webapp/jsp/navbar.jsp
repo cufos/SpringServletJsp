@@ -19,10 +19,13 @@
                         <a class="hover:text-blue-400 transition-border duration-100 hover:border-b-2 hover:border-blue-400" href="/">Home</a>
                     </li>
                     <li>
-                        <a class="hover:text-blue-400 hover:border-b-2 hover:border-blue-400" href="/projects">Projects</a>
+                        <a class="hover:text-blue-400 hover:border-b-2 hover:border-blue-400" href="${pageContext.request.contextPath}/projects">Projects</a>
                     </li>
                     <li>
-                        <a class="hover:text-blue-400 hover:border-b-2 hover:border-blue-400" href="/skills">Skills</a>
+                        <a class="hover:text-blue-400 hover:border-b-2 hover:border-blue-400" href="${pageContext.request.contextPath}/skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-blue-400 hover:border-b-2 hover:border-blue-400" href="${pageContext.request.contextPath}/createproject">Create Project</a>
                     </li>
                 </ul>
         </div>

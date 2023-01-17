@@ -16,5 +16,11 @@ public class WebSiteInfoController {
     return new ModelAndView("/jsp/index.jsp","info",true);
   }
 
+  @GetMapping("/createproject")
+  public ModelAndView createProject(){
+    return new ModelAndView("/jsp/createProject.jsp");
+  }
+
+
 
 }

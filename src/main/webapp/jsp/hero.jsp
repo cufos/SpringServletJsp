@@ -1,5 +1,9 @@
 <div class="bg-cover h-screen bg-top bg-no-repeat" style="background-image: url('../static/man.jpg')">
-    <h2 class="text-2xl pr-4 text-white flex justify-end items-center  h-full max-w-5xl w-full">
-        Let's <span class="bg-blue-500 text-black inline-block mx-2 px-[.5rem]">crafts</span> your ideas <span class="bg-blue-500 text-black inline-block mx-2 px-[.5rem]">into</span> a meaningful <span class="bg-blue-500 text-black inline-block mx-2 px-[.5rem]">design</span>
-    </h2>
+    <div class="h-full max-w-5xl w-full flex justify-end items-center">
+        <p class="text-2xl px-4 text-white leading-10">
+            Let's your <span class="bg-blue-500 px-[.3rem]">ideas</span> into a <span class="bg-blue-500 px-[.5rem]">meaningful</span> design
+        </p>
+    </div>
 </div>
+
+

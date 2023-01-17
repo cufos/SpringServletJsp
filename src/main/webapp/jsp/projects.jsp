@@ -1,22 +1,13 @@
-<div class="bg-dark pb-4" id="projects">
-    <h3 class="text-center text-uppercase pt-4 mb-4 mt-4 text-light">Projects</h3>
-    <div class="container">
-        <article class="text-light mb-3 p-3 border rounded border-info border-1">
+<div class="bg-black pb-4 text-white" id="projects">
+    <h3 class="uppercase m-auto pt-4 mb-4 mt-4 text-xl border-b-4 border-cyan-400 w-min">Projects</h3>
+    <div class="max-w-5xl m-auto pb-4 px-4">
+        <article class="mb-3 p-4 border rounded border-cyan-400">
             <h4>Portfolio</h4>
             <p>My portfolio where i show all the projects that i have build to now</p>
-            <a href="https://github.com/cufos/portfolio" target="_blank" rel="noreferrer noopener">Porfolio link</a>
+            <a class="text-cyan-400 hover:border-b-2 hover:border-cyan-400" href="https://github.com/cufos/portfolio" target="_blank" rel="noreferrer noopener">Porfolio link</a>
             <div class="pt-2">
-                <button type="button" class="btn btn-success">Update</button>
-                <button type="button" class="btn btn-danger">Delete</button>
-            </div>
-        </article>
-        <article class="text-light p-3 border rounded border-info border-1">
-            <h4>Real State Projects</h4>
-            <p>Bienes racies it's real state agency project created with html and css, this it's one of my first projects</p>
-            <a href="https://github.com/cufos/bienes-raices" target="_blank" rel="noreferrer noopener">Project link</a>
-            <div class="pt-2">
-                <button type="button" class="btn btn-success">Update</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="button" class="text-green-400 border border-green-400 p-[.5rem] rounded hover:text-white hover:bg-green-400">Update</button>
+                <button type="button" class="ml-3 text-red-400 border border-red-400 p-[.5rem] rounded hover:text-white hover:bg-red-400">Delete</button>
             </div>
         </article>
     </div>
